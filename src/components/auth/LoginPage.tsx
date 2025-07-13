@@ -50,26 +50,26 @@ export function LoginPage({ onLogin }: LoginPageProps) {
       </div>
 
       <div className="w-full max-w-md relative z-10">
-        {/* Demon Slayer Logo */}
+        {/* Professional Logo */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-20 h-20 flame-glow rounded-2xl mb-4 float-animation relative">
             <Shield className="w-10 h-10 text-primary-foreground flame-dance" />
             <div className="absolute inset-0 rounded-2xl border-2 border-primary/50 animate-pulse"></div>
           </div>
           <h1 className="text-4xl font-bold text-foreground mb-2 flame-dance">CampusConnect</h1>
-          <p className="text-muted-foreground text-lg">Enter the Demon Slayer Academy</p>
+          <p className="text-muted-foreground text-lg">Connect with your college community</p>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mt-2 rounded-full"></div>
         </div>
 
-        {/* Demon Slayer Login Card */}
+        {/* Professional Login Card */}
         <Card className="demon-slayer-card border-primary/20 backdrop-blur-sm relative overflow-hidden">
-          {/* Flame border effect */}
+          {/* Elegant border effect */}
           <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-accent/10 rounded-lg"></div>
           
           <CardHeader className="text-center space-y-3 relative z-10">
-            <CardTitle className="text-2xl font-semibold text-foreground">Welcome, Slayer</CardTitle>
+            <CardTitle className="text-2xl font-semibold text-foreground">Welcome Back</CardTitle>
             <CardDescription className="text-base">
-              Use your academy credentials to join the corps
+              Sign in with your college email to get started
             </CardDescription>
           </CardHeader>
           
@@ -81,7 +81,7 @@ export function LoginPage({ onLogin }: LoginPageProps) {
               </Alert>
             )}
 
-            {/* Nichirin Blade Google Sign-in Button */}
+            {/* Professional Google Sign-in Button */}
             <Button
               onClick={handleGoogleSignIn}
               disabled={loading}
@@ -90,7 +90,7 @@ export function LoginPage({ onLogin }: LoginPageProps) {
               {loading ? (
                 <div className="flex items-center space-x-3">
                   <div className="spinner-3d w-6 h-6 border-primary-foreground border-t-transparent" />
-                  <span>Entering Academy...</span>
+                  <span>Signing in...</span>
                 </div>
               ) : (
                 <div className="flex items-center space-x-3">
@@ -101,35 +101,27 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                     <path fill="currentColor" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
                   </svg>
                   <span>Sign in with Google</span>
-                  <div className="absolute right-3 opacity-50">⚔️</div>
                 </div>
               )}
             </Button>
 
-            {/* Demon Slayer Security Notice */}
+            {/* Professional Security Notice */}
             <div className="flex items-start space-x-3 p-4 bg-gradient-to-r from-muted/50 to-muted/30 rounded-lg border border-border/50 water-breathing">
               <Lock className="w-5 h-5 text-primary mt-0.5 flex-shrink-0 flame-dance" />
               <div className="text-sm text-muted-foreground">
-                <p className="font-medium text-foreground mb-1 flex items-center gap-2">
-                  🛡️ Demon Slayer Corps Security
+                <p className="font-medium text-foreground mb-1">
+                  Secure College Authentication
                 </p>
-                <p>Only academy students with valid .edu credentials can join the corps. Your mission data is protected by Total Concentration breathing techniques.</p>
+                <p>Only students with valid .edu email addresses can access CampusConnect. Your privacy and data security are our top priority.</p>
               </div>
-            </div>
-
-            {/* Character Elements */}
-            <div className="flex justify-center space-x-6 pt-2">
-              <div className="text-2xl animate-bounce">🔥</div>
-              <div className="text-2xl animate-pulse">💧</div>
-              <div className="text-2xl animate-bounce delay-150">⚡</div>
             </div>
           </CardContent>
         </Card>
 
-        {/* Footer with Demon Slayer Theme */}
+        {/* Professional Footer */}
         <div className="text-center mt-8 text-sm text-muted-foreground">
-          <p className="mb-2">🎓 Not enrolled in the academy yet?</p>
-          <p>Contact your institution's administration to get your corps credentials.</p>
+          <p className="mb-2">Don't have a college email?</p>
+          <p>Contact your institution's IT department for assistance.</p>
         </div>
       </div>
     </div>
